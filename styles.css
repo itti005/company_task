@@ -1,0 +1,71 @@
+/* Added  styles for adjusting image size, text alignment, and other custom styles */
+img {
+    max-width: 100%;
+    height: auto;
+}
+.dataTables_paginate {
+    text-align: center;
+}
+/* Customize DataTable styles ,Center align the DataTable,adjusted the width  of the Serial Number,title,description column */
+
+#newsTable_wrapper {
+    margin: 0 auto;
+}
+/*  padding to the table cells */
+#newsTable td {
+    padding: 10px;
+}
+
+#newsTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#newsTable th, #newsTable td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#newsTable th {
+    background-color: #4CAF50;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    width: 50px; /* Adjust the width of the Serial Number column */
+}
+
+#newsTable td:nth-child(2) {
+    width: 400px; /* Adjust the width of the Title column */
+}
+
+#newsTable td:nth-child(4) {
+    max-width: 150px; /* Adjust the maximum width of the link */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#newsTable td:nth-child(3) img {
+    max-width: 100px; /*  the maximum width of the image */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#newsTable td:nth-child(5) {
+    width: 120px; /*width of the Publication Date column */
+}
+
+#newsTable td:nth-child(6) {
+    width: 120px; /*  width of the Author column */
+}
+
+#newsTable tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.dataTables_length, .dataTables_filter {
+    font-weight: bold;
+    margin-right: 10px;
+}
